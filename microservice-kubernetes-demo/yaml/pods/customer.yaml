@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: customer
+  name: customer
+spec:
+  containers:
+  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-customer
+    name: customer
+    ports:
+    - containerPort: 8080

@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: order
+  name: order
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: order
+  template:
+    metadata:
+      labels:
+        run: order
+    spec:
+      containers:
+      - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-order
+        name: order
+        ports:
+        - containerPort: 8080

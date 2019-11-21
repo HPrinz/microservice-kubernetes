@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: customer
+  name: customer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: customer
+  template:
+    metadata:
+      labels:
+        run: customer
+    spec:
+      containers:
+      - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-customer
+        name: customer
+        ports:
+        - containerPort: 8080

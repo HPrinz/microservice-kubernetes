@@ -1,0 +1,21 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  labels:
+    run: catalog
+  name: catalog
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      run: catalog
+  template:
+    metadata:
+      labels:
+        run: catalog
+    spec:
+      containers:
+      - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-catalog
+        name: catalog
+        ports:
+        - containerPort: 8080

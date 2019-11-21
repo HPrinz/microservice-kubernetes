@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: order
+  name: order
+spec:
+  containers:
+  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-order
+    name: order
+    ports:
+    - containerPort: 8080
