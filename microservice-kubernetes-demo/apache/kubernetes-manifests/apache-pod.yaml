@@ -6,7 +6,7 @@ metadata:
   name: apache
 spec:
   containers:
-  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-apach
+  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-apache
     name: apache
     ports:
     - containerPort: 80

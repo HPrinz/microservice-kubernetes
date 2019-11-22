@@ -15,7 +15,7 @@ spec:
         run: catalog
     spec:
       containers:
-      - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-catalog
+      - image: gcr.io/default-projekt/default-cluster/microservice-catalog
         name: catalog
         ports:
         - containerPort: 8080

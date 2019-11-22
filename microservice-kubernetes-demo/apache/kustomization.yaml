@@ -1,0 +1,9 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- kubernetes-manifests/deployment-apache.yaml
+
+images:
+- name: gcr.io/default-projekt/default-cluster/microservice-apache
+  newName: gcr.io/dein-projekt/dein-cluster/microservice-apache # FILL YOUR DATA HERE

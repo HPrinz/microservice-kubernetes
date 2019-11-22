@@ -15,7 +15,7 @@ spec:
         run: order
     spec:
       containers:
-      - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-order
+      - image: gcr.io/default-projekt/default-cluster/microservice-order
         name: order
         ports:
         - containerPort: 8080
