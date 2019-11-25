@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    app: customer
+    run: customer
   name: customer
 spec:
   containers:

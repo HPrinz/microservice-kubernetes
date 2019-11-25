@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   labels:
-    app: order
+    run: order
   name: order
 spec:
   containers:

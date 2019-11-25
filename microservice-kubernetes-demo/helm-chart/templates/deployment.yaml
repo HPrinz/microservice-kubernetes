@@ -2,18 +2,18 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   labels:
-    app: {{ quote .Values.name }}
+    run: {{ quote .Values.name }}
     version: {{ quote .Values.deploymentVersion }}
   name: {{ quote .Values.name }}
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: {{ quote .Values.name }}
+      run: {{ quote .Values.name }}
   template:
     metadata:
       labels:
-        app: {{ quote .Values.name }}
+        run: {{ quote .Values.name }}
     spec:
       containers:
       - name: {{ quote .Values.name }}
