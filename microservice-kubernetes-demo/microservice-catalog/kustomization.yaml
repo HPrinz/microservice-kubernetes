@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 
 resources:
-- kubernetes-manifests/deployment-catalog.yaml
+- kubernetes-manifests/catalog-deployment.yaml
 
 images:
 - name: gcr.io/default-project/default-cluster/microservice-catalog
