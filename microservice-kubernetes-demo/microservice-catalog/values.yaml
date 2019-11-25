@@ -1,5 +1,5 @@
-projectname: default-project
-clustername: default-cluster
+projectname: PROJEKT
+clustername: CLUSTERNAME
 name: catalog
 imageVersion: 1
 port: 8080

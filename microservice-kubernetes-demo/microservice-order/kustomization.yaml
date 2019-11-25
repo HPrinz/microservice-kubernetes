@@ -3,7 +3,8 @@ kind: Kustomization
 
 resources:
 - kubernetes-manifests/order-deployment.yaml
+- kubernetes-manifests/order-service.yaml
 
 images:
 - name: gcr.io/default-project/default-cluster/microservice-order
-  newName: gcr.io/dein-projekt/dein-cluster/microservice-order    # TRAGE DEINE DATEN HIER EIN
+  newName: gcr.io/PROJEKT/CLUSTERNAME/microservice-order    # TRAGE DEINE DATEN HIER EIN

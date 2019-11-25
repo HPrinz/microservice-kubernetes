@@ -3,7 +3,8 @@ kind: Kustomization
 
 resources:
 - kubernetes-manifests/apache-deployment.yaml
+- kubernetes-manifests/apache-service.yaml
 
 images:
 - name: gcr.io/default-project/default-cluster/microservice-apache
-  newName: gcr.io/dein-projekt/dein-cluster/microservice-apache    # TRAGE DEINE DATEN HIER EIN
+  newName: gcr.io/PROJEKT/CLUSTERNAME/microservice-apache    # TRAGE DEINE DATEN HIER EIN

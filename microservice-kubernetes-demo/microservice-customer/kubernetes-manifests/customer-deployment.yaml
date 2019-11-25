@@ -15,7 +15,7 @@ spec:
         app: customer
     spec:
       containers:
-      - image: gcr.io/default-projekt/default-cluster/microservice-customer:1
+      - image: gcr.io/default-project/default-cluster/microservice-customer:1
         name: customer
         ports:
         - containerPort: 8080
