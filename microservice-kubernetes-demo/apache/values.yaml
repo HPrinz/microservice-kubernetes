@@ -1,5 +1,5 @@
 projectname: default-project
 clustername: default-cluster
 name: apache
-imageVersion: 1
+imageVersion: latest
 port: 80
