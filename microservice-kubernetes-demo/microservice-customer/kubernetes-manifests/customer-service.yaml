@@ -10,4 +10,4 @@ spec:
     targetPort: 8080
   selector:
     run: customer
-  type: LoadBalancer
+  type: NodePort
