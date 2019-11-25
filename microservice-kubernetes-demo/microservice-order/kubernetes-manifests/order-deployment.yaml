@@ -2,17 +2,17 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   labels:
-    run: order
+    app: order
   name: order
 spec:
   replicas: 1
   selector:
     matchLabels:
-      run: order
+      app: order
   template:
     metadata:
       labels:
-        run: order
+        app: order
     spec:
       containers:
       - image: gcr.io/default-projekt/default-cluster/microservice-order:1
