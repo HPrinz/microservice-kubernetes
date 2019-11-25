@@ -5,5 +5,5 @@ resources:
 - kubernetes-manifests/deployment-catalog.yaml
 
 images:
-- name: gcr.io/default-projekt/default-cluster/microservice-catalog
+- name: gcr.io/default-project/default-cluster/microservice-catalog
   newName: gcr.io/dein-projekt/dein-cluster/microservice-catalog # FILL YOUR DATA HERE

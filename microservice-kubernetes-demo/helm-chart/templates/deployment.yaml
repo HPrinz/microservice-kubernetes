@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   labels:
     app: {{ quote .Values.name }}
-    version: {{ quote .Values.deploymentVersion }}
   name: {{ quote .Values.name }}
 spec:
   replicas: 1
@@ -17,7 +16,6 @@ spec:
     spec:
       containers:
       - name: {{ quote .Values.name }}
-        image: microservice-{{ .Values.name }}:{{ .Values.imageVersion }}
-        imagePullPolicy: Never
+        image: gcr.io/{{ .Values.projectname }}/{{ .Values.clustername }}/microservice-{{ .Values.name }}:{{ .Values.imageVersion }}
         ports:
         - containerPort: {{ .Values.port }}

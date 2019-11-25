@@ -5,5 +5,5 @@ resources:
 - kubernetes-manifests/customer-deployment.yaml
 
 images:
-- name: gcr.io/default-projekt/default-cluster/microservice-customer
+- name: gcr.io/default-project/default-cluster/microservice-customer
   newName: gcr.io/dein-projekt/dein-cluster/microservice-customer # FILL YOUR DATA HERE
