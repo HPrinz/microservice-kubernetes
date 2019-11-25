@@ -15,7 +15,7 @@ spec:
         run: customer
     spec:
       containers:
-      - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-customer
+      - image: gcr.io/default-projekt/default-cluster/microservice-customer:1
         name: customer
         ports:
         - containerPort: 8080
