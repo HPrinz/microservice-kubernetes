@@ -2,18 +2,18 @@
 if [ -z "$DOCKER_ACCOUNT" ]; then
     DOCKER_ACCOUNT=ewolff
 fi;
-docker build --tag=microservice-kubernetes-demo-apache apache
-docker tag microservice-kubernetes-demo-apache $DOCKER_ACCOUNT/microservice-kubernetes-demo-apache:latest
-docker push $DOCKER_ACCOUNT/microservice-kubernetes-demo-apache
+docker build --tag=microservice-apache apache
+docker tag microservice-apache $DOCKER_ACCOUNT/microservice-apache:latest
+docker push $DOCKER_ACCOUNT/microservice-apache
 
-docker build --tag=microservice-kubernetes-demo-catalog microservice-kubernetes-demo-catalog
-docker tag microservice-kubernetes-demo-catalog $DOCKER_ACCOUNT/microservice-kubernetes-demo-catalog:latest
-docker push $DOCKER_ACCOUNT/microservice-kubernetes-demo-catalog
+docker build --tag=microservice-catalog microservice-catalog
+docker tag microservice-catalog $DOCKER_ACCOUNT/microservice-catalog:latest
+docker push $DOCKER_ACCOUNT/microservice-catalog
 
-docker build --tag=microservice-kubernetes-demo-customer microservice-kubernetes-demo-customer
-docker tag microservice-kubernetes-demo-customer $DOCKER_ACCOUNT/microservice-kubernetes-demo-customer:latest
-docker push $DOCKER_ACCOUNT/microservice-kubernetes-demo-customer
+docker build --tag=microservice-customer microservice-customer
+docker tag microservice-customer $DOCKER_ACCOUNT/microservice-customer:latest
+docker push $DOCKER_ACCOUNT/microservice-customer
 
-docker build --tag=microservice-kubernetes-demo-order microservice-kubernetes-demo-order
-docker tag microservice-kubernetes-demo-order $DOCKER_ACCOUNT/microservice-kubernetes-demo-order:latest
-docker push $DOCKER_ACCOUNT/microservice-kubernetes-demo-order
+docker build --tag=microservice-order microservice-order
+docker tag microservice-order $DOCKER_ACCOUNT/microservice-order:latest
+docker push $DOCKER_ACCOUNT/microservice-order

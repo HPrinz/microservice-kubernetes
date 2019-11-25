@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>microservice-kubernetes-demo-order</artifactId>
+	<artifactId>microservice-order</artifactId>
 
 	<dependencies>
 

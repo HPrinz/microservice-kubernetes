@@ -15,9 +15,9 @@
 	<packaging>pom</packaging>
 
 	<modules>
-		<module>microservice-kubernetes-demo-customer</module>
-		<module>microservice-kubernetes-demo-catalog</module>
-		<module>microservice-kubernetes-demo-order</module>
+		<module>microservice-customer</module>
+		<module>microservice-catalog</module>
+		<module>microservice-order</module>
 	</modules>
 
 	<properties>
