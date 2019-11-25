@@ -6,4 +6,4 @@ resources:
 
 images:
 - name: gcr.io/default-project/default-cluster/microservice-apache
-  newName: gcr.io/dein-projekt/dein-cluster/microservice-apache # FILL YOUR DATA HERE
+  newName: gcr.io/dein-projekt/dein-cluster/microservice-apache    # TRAGE DEINE DATEN HIER EIN

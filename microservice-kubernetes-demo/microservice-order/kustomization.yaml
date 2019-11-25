@@ -6,4 +6,4 @@ resources:
 
 images:
 - name: gcr.io/default-project/default-cluster/microservice-order
-  newName: gcr.io/dein-projekt/dein-cluster/microservice-order # TRAGE DEINE DATEN HIER EIN
+  newName: gcr.io/dein-projekt/dein-cluster/microservice-order    # TRAGE DEINE DATEN HIER EIN
