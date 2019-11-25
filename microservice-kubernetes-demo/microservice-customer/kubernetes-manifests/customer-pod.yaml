@@ -6,7 +6,7 @@ metadata:
   name: customer
 spec:
   containers:
-  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-customer
+  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-customer:1
     name: customer
     ports:
     - containerPort: 8080

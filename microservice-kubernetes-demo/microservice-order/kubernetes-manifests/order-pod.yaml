@@ -6,7 +6,7 @@ metadata:
   name: order
 spec:
   containers:
-  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-order
+  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-order:1
     name: order
     ports:
     - containerPort: 8080

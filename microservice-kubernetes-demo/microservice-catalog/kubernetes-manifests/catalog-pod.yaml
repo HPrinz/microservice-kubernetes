@@ -6,7 +6,7 @@ metadata:
   name: catalog
 spec:
   containers:
-  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-catalog
+  - image: gcr.io/${PROJECT_ID}/${CLUSTERNAME}/microservice-catalog:1
     name: catalog
     ports:
     - containerPort: 8080
