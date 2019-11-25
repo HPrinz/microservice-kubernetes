@@ -15,7 +15,7 @@ spec:
         app: apache
     spec:
       containers:
-      - image: gcr.io/default-projekt/default-cluster/microservice-apache
+      - image: gcr.io/default-project/default-cluster/microservice-apache
         name: apache
         ports:
         - containerPort: 80
