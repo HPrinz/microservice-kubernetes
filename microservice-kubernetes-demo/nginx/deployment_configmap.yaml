@@ -1,0 +1,36 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nginx
+  name: nginx
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - image: nginx
+        name: nginx
+        env:                                # Adding Environment variables to a container
+        - name: VIA_SPEC                
+          value: "Hard Coded im YAML"       # Value hardcoded in the spec
+        - name: VIA_CONFIGMAP
+          valueFrom:                        # instead of direct value reference it
+            configMapKeyRef:                # all info to get a specific variable value 
+              name: nginx-config
+              key: example.value
+
+---
+
+apiVersion: v1
+kind: ConfigMap                            
+metadata:
+  name: nginx-config
+data:
+  example.value: "TADA! Das ist ein Wert aus der Configmap"
